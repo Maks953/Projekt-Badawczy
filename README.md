@@ -1,2 +1,4 @@
 # Projekt-Badawczy
 To repozytorium jest przeznaczone dla skryptów, które wykorzystałem w moim projekcie badawczym dotyczącym raka. Te skrypty zostały użyte do porównania odległości między barwionymi komórkami. ImageJ zostało wykorzystane do nałożenia progu RGB, co oznaczyło barwione komórki nowotworowe, umożliwiając użycie skryptu w Pythonie do analizy odległości między każdą oznaczoną komórką na obrazie.
+# Reletive Position
+Ten skrypt służy do obliczania względnych odległości między dwoma punktami (komórkami) na podstawie ich indeksów. Wczytuje dane z pliku, w którym zapisane są współrzędne (x, y) oraz indeksy poszczególnych punktów. Skrypt znajduje współrzędne dla dwóch podanych indeksów (np. komórek w obrazach barwionych i niebarwionych) i oblicza przesunięcie między nimi w osiach X i Y. Wynik jest wyświetlany jako różnica w pikselach, co może być pomocne w analizie odległości między komórkami w różnych obrazach.
