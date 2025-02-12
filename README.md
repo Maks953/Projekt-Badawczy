@@ -1,2 +1,2 @@
 # Projekt-Badawczy
-Projekt badawczy dotyczący etykietowania danych w badaniach nad rakiem, oparty na raku jamy ustnej.
+To repozytorium jest przeznaczone dla skryptów, które wykorzystałem w moim projekcie badawczym dotyczącym raka. Te skrypty zostały użyte do porównania odległości między barwionymi komórkami. ImageJ zostało wykorzystane do nałożenia progu RGB, co oznaczyło barwione komórki nowotworowe, umożliwiając użycie skryptu w Pythonie do analizy odległości między każdą oznaczoną komórką na obrazie.
