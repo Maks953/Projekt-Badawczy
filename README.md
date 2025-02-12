@@ -4,6 +4,12 @@ To repozytorium jest przeznaczone dla skryptów, które wykorzystałem w moim pr
 Na początku ręcznie wybrałem obrazy komórek, które były dokładnie zabarwione. Te obrazy miały być użyte do porównań z obrazami niezabarwionymi. Użyłem aplikacji do przetwarzania obrazów o nazwie ImageJ. Korzystając z tej aplikacji, stworzyłem skrypt w Pythonie, który nakładał próg, priorytetowo traktując czerwony i niebieski kanał RGB. Odpowiedni próg i ustawienia zostały znalezione poprzez zmianę parametrów RGB. Po ich znalezieniu, skrypt zawierał iteracyjną metodę Pythona, która iterowała przez każdy wybrany obraz zabarwionej komórki. Wynikiem były obrazy zabarwionych komórek z wyróżnionymi kanałami RGB. Następnym krokiem było włączenie GAN, abyśmy mogli stworzyć trzy foldery: Val, Train, Test.
 # Plan
 Plan polega na dopasowaniu obszaru pikseli w folderze barwionym do odpowiadającego zestawu pikseli z folderu niebarwionego. Proces ten obejmuje dwa kroki
+# RGB Script Operation
+## Proces
+1. Rozdziela kanały i wybiera kanał czerwony.
+2. Poprawia kontrast, usuwa tło i stosuje rozmycie.
+3. Tworzy binarną maskę obrazu, aby wyodrębnić komórki.
+4. Zapisuje przetworzone obrazy (maski) do folderu new.
 # Reletive Position
 Ten skrypt służy do obliczania względnych odległości między dwoma punktami (komórkami) na podstawie ich indeksów. Wczytuje dane z pliku, w którym zapisane są współrzędne (x, y) oraz indeksy poszczególnych punktów. Skrypt znajduje współrzędne dla dwóch podanych indeksów (np. komórek w obrazach barwionych i niebarwionych) i oblicza przesunięcie między nimi w osiach X i Y. Wynik jest wyświetlany jako różnica w pikselach, co może być pomocne w analizie odległości między komórkami w różnych obrazach.
 # Script to find XY positions
